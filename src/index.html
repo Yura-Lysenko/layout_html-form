@@ -12,6 +12,7 @@
   </head>
   <body>
     <h1>HTML Form</h1>
+    <script type="text/javascript" src="./main.js"></script>
     <form method="post" action="https://mate-academy-form-lesson.herokuapp.com/create-application">
       <fieldset class="form-group">
         <legend>
@@ -20,35 +21,40 @@
 
         <label class="form-input">
           Surname:
-          <input type="text"
-                 name="Surname"
-                 required
-                 autocomplete="off"
+          <input
+            type="text"
+            name="Surname"
+            required
+            autocomplete="off"
           >
         </label>
 
         <label class="form-input">
           Name:
-          <input type="text"
-                 name="Name"
-                 required
-                 autocomplete="off"
+          <input
+            type="text"
+            name="Name"
+            required
+            autocomplete="off"
           >
         </label>
 
         <label class="form-input">
-          How old are you:
-          <input type="number"
-                 name="age"
-                 value="12"
-                 min="1"
-                 max="100"
+          How old are you?
+          <input
+            type="number"
+            name="age"
+            value="12"
+            min="1"
+            max="100"
           >
         </label>
 
         <label class="form-input">
           Full date of birth:
-          <input type="date" name="birthday">
+          <input
+            type="date"
+            name="birthday">
         </label>
 
         <label class="form-input">
@@ -62,18 +68,20 @@
         </legend>
         <label class="form-input">
           E-mail:
-          <input type="email"
-                 name="email"
-                 placeholder="email@example.com"
+          <input
+            type="email"
+            name="email"
+            placeholder="email@example.com"
           >
         </label>
 
         <label class="form-input">
           Password:
-          <input type="password"
-                 name="password"
-                 maxlength="8"
-                 minlength="5"
+          <input
+            type="password"
+            name="password"
+            maxlength="8"
+            minlength="5"
           >
         </label>
       </fieldset>
@@ -84,16 +92,18 @@
         <div class="form-input">
           Do you love cats?
           <label>
-            <input type="radio"
-                   name="love cats?"
-                   value="Yes"
+            <input
+              type="radio"
+              name="love cats?"
+              value="Yes"
             >
             Yes
           </label>
           <label>
-            <input type="radio"
-                   name="love cats?"
-                   value="No"
+            <input
+              type="radio"
+              name="love cats?"
+              value="No"
             >
             No
           </label>
@@ -101,17 +111,19 @@
 
         <label class="form-input">
           What is your favorite color?
-          <input type="color"
-                 name="color"
-                 value="black"
+          <input
+            type="color"
+            name="color"
+            value="black"
           >
         </label>
 
         <label class="form-input">
           What time do you go to bed?
-          <input type="time"
-                 name="go to bed at"
-                 step="1"
+          <input
+            type="time"
+            name="go to bed at"
+            step="1"
           >
         </label>
 
@@ -126,12 +138,13 @@
 
         <label class="form-input">
           How do you rate our work?
-          <input type="range"
-                 name="rate"
-                 value="0"
-                 min="0"
-                 max="10"
-                 step="1"
+          <input
+            type="range"
+            name="rate"
+            value="0"
+            min="0"
+            max="10"
+            step="1"
           >
         </label>
       </fieldset>
@@ -141,7 +154,11 @@
         </legend>
         <label class="form-input">
           Commnets:
-          <textarea name="Commnets" cols="20" rows="2"></textarea>
+          <textarea
+            name="Commnets"
+            cols="20"
+            rows="2">
+          </textarea>
         </label>
 
         <label class="form-input">
@@ -152,8 +169,9 @@
           </select>
         </label>
       </fieldset>
-      <button class="form-group" type="submit">Submit</button>
+      <button class="form-group" type="submit">
+        Submit
+      </button>
     </form>
-    <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
